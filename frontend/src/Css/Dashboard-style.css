@@ -1,0 +1,418 @@
+.Dashboard {
+    display: flex;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+
+    flex-direction: column;
+    padding: 1.5%;
+}
+
+.DashboardTopBar {
+    display: flex;
+    width: -webkit-fill-available;
+
+}
+
+.DashboardTopBar > h1 {
+    margin: 0;
+}
+
+.PageCenter {
+    width: -webkit-fill-available;
+    display: flex;
+    padding: 1.5%;
+    height: 40%;
+    flex-direction: column;
+}
+
+.PageCenter > h2 {
+    margin: 0;
+}
+
+.BlockList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: -webkit-fill-available;   
+}
+
+.SuggestedBooks {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-width: 70%;
+    justify-content: space-around;
+}
+
+.SuggestedBooksEntry {
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    height: 25%;
+}
+
+.SuggestedBookImage {
+    display: flex;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 8px 0px 0px 8px;
+    max-width: 15%;
+
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.RightArrowImg {
+    display: flex;
+}
+.SuggestedWrapper {
+    display: flex;
+    width: -webkit-fill-available;
+    background-color: #F3F3F4;
+    border-radius: 0px 8px 8px 0px;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    align-items: center;
+}
+
+.SuggestedBooksEntryText {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-around;
+    padding: 1.5%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.SuggestedBooksEntryText >h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.SuggestedBooksEntryText >h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.BookData {
+    display: flex;
+    flex-direction: row;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+.SuggestedWrapper > input[type="button"] {
+    background-color: rgb(120,70,180);
+    padding: 1.5%;
+    min-width: 12%;
+    margin-right: .5%;
+    border-radius: 80px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.BookData > div {
+    font-size: medium;
+    font-weight: normal;
+    margin-right: 20%;
+}
+
+.CreditDisplay {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    align-items: center;
+    margin-left: 5%;
+    border-radius:  8px;
+    background: linear-gradient(110deg,  rgb(120,70,180) 70%,  #8b61bf 70%);
+    color: white;
+    padding: 1.5%;
+    justify-content: space-between;
+    transition: all 1000ms;
+    transition-timing-function: ease-out;
+}
+
+.CreditDisplay > h2 {
+    margin: 5%;
+    width:auto;
+}
+
+.Movements {
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    justify-content: space-around;
+}
+
+.Movement{
+    width: 45%;
+    border-radius: 10vh;
+    background-color: white;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Movement > img {
+    aspect-ratio: 1 / 1;
+    max-width: 30%;
+    border-radius: 50%;
+}
+.Movement > h3 {
+    font-size: 1.4vw;
+    width: 70%;
+    color: black;
+    margin: 0;
+}
+
+#entries {
+    box-shadow: 0 0 10px 2px rgb(0,219,187,.5);
+    transform: rotate(180deg);
+}
+
+#expenses {
+    box-shadow: 0 0 10px 2px rgb(255,97,116,.5);
+    transform: rotate(180deg);
+}
+
+#balance {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: center;
+    margin: 0;
+    font-size: 5vw;
+}
+
+.CreditDisplay > input[type="text"]{
+    width: 40%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    text-align: center;
+    margin: 5% 0% 5% 0%;
+}
+
+.CreditDisplay > input[type="button"]{
+    width: 70%;
+    box-shadow: 0 2px 10px 1px rgb(253,208,91);
+    background-color: rgb(253,208,91);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.CreditDisplay > input[type="button"]:hover{
+    background-color: rgb(255, 227, 156);
+}
+
+
+.PageBottom {
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    overflow-y: auto;
+}
+
+.TransactionHistory {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #F3F3F4;
+    border: 1px solid black;
+    min-width: 52%;
+    margin: 1%;
+    padding: 1%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.TransactionHistoryTop {
+    display: flex;
+    flex-direction: row;
+}
+
+.TransactionHistoryTop > h2 {
+    margin: 0;
+    width: -webkit-fill-available;
+}
+
+.TransactionHistoryTop > h4 {
+    margin: 0;
+    font-weight: normal;
+    color: rgb(120,70,180);
+    white-space: nowrap;
+}
+
+.TransactionHistoryEntry {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin: 1% 0 1% 0%;
+}
+
+.TransactionHistoryEntry > h4 {
+    margin: 0;
+    width: 33%;
+    text-wrap: wrap;
+    font-weight: bold;
+   
+    margin-right: 4%;
+}
+
+.Minus {
+    color: rgb(255,97,116);
+    margin: 0;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.Plus {
+    color: rgb(0,219,187);
+    margin: 0;
+    text-align: right;
+    white-space: nowrap;
+}
+
+
+.ProfileRecap {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #F3F3F4;
+    border: 1px solid black;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: 1%;
+    padding: 1%;
+    overflow-y: auto;
+}
+
+.ProfileRecapLeft {
+    flex: 1;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.ProfileRecapLeftTop {
+    display: flex;
+    flex: 1;
+}
+.ProfileRecapLeft > h2 {
+    margin: 0;
+}
+
+.ProfileRecapGenres {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.ProfileRecapGenresEntry {
+    flex-direction: row;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    align-items: center;
+}
+
+.ProfileRecapGenresEntry > h4 {
+    padding-right: 5%;
+    text-align: right;
+    justify-content: flex-start;
+    text-wrap: wrap;
+    margin: 0;
+    width: 30%;
+    display: flex;
+}
+
+.ProfileRecapGenresEntry > h4+.ProgressBar+h4 {
+    text-align: right;
+    justify-content: flex-end;
+    margin: 0;
+    width: 30%;
+    display: flex;
+}
+
+.ProgressBar {
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    width:-webkit-fill-available;
+    height: 1vw;
+}
+
+.ProgressBar > div {
+    background-color: #8b61bf;
+    border-radius: 20px;
+}
+
+.Stats {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.StatsEntry {
+    display: flex;
+    flex: row;
+}
+
+.StatsEntryImg{
+    aspect-ratio: 1/1;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+}
+
+.StatsData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
+
+.StatsData > h4 {
+    color: grey;
+    margin: 0;
+    font-weight: normal;
+    padding: 2%;
+    white-space: nowrap;
+}
+
+.StatsData > h2 {
+    margin: 0;
+}
+
+.StatsEntryImg > img {
+    aspect-ratio: 1/1;
+    max-width: 60%;
+}
+
+    
+
+
+
